@@ -1,0 +1,11 @@
+Primitives in js
+    Primitives are value type.
+    Primitive are not objects they have pure values it doesnt attach any method, it means no possible way to mutate the values, so thats why the yare immutable
+
+Reference Type/Non primitive type in js
+    Acting like a pointer holding the reference of a value.
+    vvar e = arr=> will not create copy
+    var e = [...arr] => will clone they have copy for each. ==> spread operator
+
+    Objects are always store in Heap Memory
+
