@@ -1,0 +1,44 @@
+array in javascript is typeof object having states and methods but array type. Array is a function.
+array is function and object is a function function help to create object and array.
+Array.constructor create contructor of function, Object.constructor.
+array ke paas object ke feature linkage ke wajah se aayy hai object se link hai.
+Array attributes
+    sort();
+    push(value);
+    pop();
+    unshift(value); add value at starting
+    shift(); remove value from beginning
+ -> splice(index, no of element, replace with value); remove everything from the index to the place specified
+    can perform
+    -insertion
+    -deletion
+    -replace from middle
+
+#RestArgument-when we find ... in argument
+
+
+Object always has key value pair
+    var t = [...phone["almaaz"]]; -> makes copy of value of array. Make immutable
+    [...]->spread operator. Ecma6
+
+var x = [];
+var y = [];
+var z = [x,y]; => will give 2d array
+var z2 = [...x,...y] => will give flat array by using spread array
+=> Rest vs spread
+=> (.) vs [] 
+    Dot operator only works with string keys.
+    [] operator is used to create key with special character.
+    [] operator work with string also
+    dot operator only executes the key.
+    [] operator evaluate the key then execute.
+
+Mutable(reference)
+1.array[] specific for,for of,push,pop,splice,shift,unshift,length
+2.object{} generic for in, [] vs {}. 
+Spread...
+3.function
+    compiled and interpreted.
+    function uses the term- Function Hoisting
+    function hoisting make the function to sit on the top of the function calling.
+    

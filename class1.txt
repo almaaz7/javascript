@@ -1,0 +1,56 @@
+https://github.com/brainmentorspvtltc/fullStack_RKGIT
+why javascript is scripting language?ECMAScript.
+small programs are known as script so it is called javascript.
+functional language is a language which can make function within funciton.
+V8 is responsible for compiling and interpreting javascript.
+javascript borrowed from scheme (genreal purpose programming lanurage), AWK,self,perl,python.
+loosely/ weakly typed language.need not to tell the type of variable or type of parameter in function
+all datatype are internally defined
+js has implicit dataType
+DataType all are immutable stores value
+1. undefined
+2. number (0-9), Decimal
+3. string double or single quote. backtick`` will create multiline string feature in ecma6
+global variable are declared with without declaring type
+a function which return nothing will return undefined.
+console.log(`a is ${a} b is ${b}`); this is known as string Template or string interpolation created in ecma6
+== vs ===
+4. == this do typecasting and do comparison this is called loose Camparison
+ === this will do strict comparison first compare the datatype then give answer
+while conversion
+    String + Number = String
+    NUmber + string = string
+parseInt("10") typecast
+NaN-not a number type is Number error value
+isNan(a)?0:a; ternary operator
+error value in number Infinity for this isFinite() is there
+5. Boolean true or false
+        boolean + number = number
+        boolean + string = string
+it can store maximum 8 byte storage in ecma2020 version new storage was introduced "bigInt" beyond 64 bit put 'n' after the number.
+TypeError when different data time cannot combine
+a = Number.MAX_SAFE_INTEGER maximum value which is avilable and less than bigint
+convert string to BigInt("23432");
+larger value of the number
+6. null means no refrence we want to remove object from the memory
+Important question Diff between undifined and null.
+typeOf Null is object but typeof undefined is undefined 
+7. Symbol(Ecma6 rare to use)
+    always generate unique things.generate
+    noduplicasy to make unique keys
+
+Mutable datatype stores address(works with reference)
+1. Array[]specific
+to make things for garbage collector
+    make it null
+    defrence
+    make function and make scope limit
+
+2. Object{}generic
+    var a = {};
+
+
+    to check specific type
+    arr "instanceof" Array; 
+
+[] vs {}
