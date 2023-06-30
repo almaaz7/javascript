@@ -1,0 +1,67 @@
+OOPs
+    -Exception Handling
+    -Inbuilt DSA
+    -Thread
+    -File Handling
+    -Array, string
+    -Memory Handling
+
+Operting system, networking, DBMS
+Live Project on me
+
+==========================================================================
+limitation of JS=> it works in the global namespace-> to solve it make modules.
+
+# closure => (the thing we are returning and the lexical scope.) this is the actual thing which is returning.
+
+# reference error when the program is not able to find the value.. first it will search in local scope then above it then above it. if not found then it will show reference error.
+
+for of loop=>
+for(let ele of arg){
+    sum = sum + ele;
+}
+
+function can have property and also function can have methods.
+
+Types of Function
+    -named function 
+        function name(){}
+    -unnamed function (anonymous function/function expression)===> function as dataType
+        var adder = function(){}
+        function can return function and also function can be inside function.
+
+        calling of function --> adder();
+
+        hoisting does--> Happens only on declaration.
+            -1 declaration 
+            2- asssign
+
+            function Calc(){
+            var add = function(x,y){
+                return x+y;
+            }
+            var sub = function(x,y){
+                return x-y;
+            }
+            return [add,sub];
+            }   
+         
+
+assigment->
+    make function which have counter that will give an increamented value everytime.
+
+JS functional programming-
+
+Function are No.1 Citizen
+Function acts as a dataType
+e.g. var a = function(){}
+Function can have nested function
+Function can pass another funciton as an argument this is called callback function <- imp. call early pass later.
+Function return function
+
+1 to N Loop 
+even odd 
+prime number 
+Armstrong number
+Table 
+cube

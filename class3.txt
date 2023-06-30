@@ -1,6 +1,16 @@
+Questions:
+    What is JS engine?
+    What is wrapper types? why it present?
+    what is AutoBoxing?
+    what is binding and what is its type?
+    Arguments vs Rest?
+
+
 Primitives in js
     Primitives are value type.
-    Primitive are not objects they have pure values it doesnt attach any method, it means no possible way to mutate the values, so thats why the yare immutable
+    Primitive are not objects they have pure values it doesnt attach any method, it means no possible way to mutate the values, so thats why the yare immutable.
+
+When we put (.) in front of dataType it will explicitely convert dataType to object ==> Auto Boxing    
 
 Reference Type/Non primitive type in js
     Acting like a pointer holding the reference of a value.
@@ -8,4 +18,60 @@ Reference Type/Non primitive type in js
     var e = [...arr] => will clone they have copy for each. ==> spread operator
 
     Objects are always store in Heap Memory
+
+Wrapper Object,
+    when we do stirng var.toUpperCase() it do autoboxing behind the scene.
+
+    After conversion it become mutable and it has access to property and methods and once method call done it is become normal.
+
+console.dir(funciton_name) => shows internal sturcture of function.
+
+Weekly types function-
+    e.g add() 
+    add(10,20)
+    add(10,20,30)
+    add(10,20,30,40,50,60)
+    add(10,"20",30,"four","one")
+    add(10,[20,"30",one],"40","four",five)
+    function one(){
+        return 1;
+    }
+    function five(){
+        return "5";
+    }
+
+
+    Object binding-
+        when we create function it get binded with the window.
+        window.add();
+        add(); (default binding)
+        Implicit Binding- when function is binded with object; to excape from the global function.
+        var obj = {
+            add();
+        }
+    Types of binding
+        -implicit binding
+        -default binding
+        -explicit binding
+
+Function with default argument        
+
+    undefined,null,NaN,false,0 --> FALSY
+    other are TRUTHY
+
+    function add(x=0){} ==> default value.
+
+Function with rest argument 
+    function add(...arg){} => rest argument can have n no. of arguments.
+
+Arguments vs Rest.
+    Argument implicit   |  Rest explicit, rest is Array, Rest is the last argument always. Rest cannot be two.
+
+Spread vs rest
+    rest always work with funciton argument of function | spread work with array and object.
+
+
+Types of Function
+    -Names Function
+    -Anonymous Function    
 
