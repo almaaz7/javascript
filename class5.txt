@@ -1,0 +1,15 @@
+lexical scope
+    first variable will be searched within local scope
+    than in parent function and then in global scope
+
+self invoking function==> bante hi chal pade;
+     
+var t = (function(){
+    var c = 0;
+    function mycount(){
+        c++;
+        return c;
+    }
+    return mycount;
+})(); ==> cante hi chal padega
+
