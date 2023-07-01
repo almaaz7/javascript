@@ -11,5 +11,100 @@ var t = (function(){
         return c;
     }
     return mycount;
-})(); ==> cante hi chal padega
+})(); ==> banate hi chal padega
+
+
+names function expression;
+function calc(){
+    var add = function adder(x,y){
+        return x+y;
+    }
+    var sub = function subtract(x,y){
+        return x-y;
+    }
+    return [add,sub];
+}
+
+when the return is array then it is used.
+
+Arrow function()---- Also know as lambda calculus...
+always use const keyword infront of the arrow function.
+
+    const adder = (x,y)=>{
+        return x+y;
+    }
+function
+Types of function 
+a. named function 
+b. anonymous function/function expression
+c .named function expression
+d. arrow function
+
+Best Practice
+1. IIFE - one time invocation(During construction)
+2. Closure - make things private, something public(return + lexical scope)
+3. HOF - higher order function - when function receive function as an argument or function return another function.
+
+
+#fn is a callback function
+#loop is a HOF
+
+const evenOdd = (num)=>num%2==0?"even "+num:"odd "+num;
+const cube = num=>num**3;
+function loop(n,fn){
+    for(var i = 1;i<=n;i++){
+        console.log(fn(i));
+    }
+}
+
+Function on array
+
+var arr = [10,20,30,40,50,60,70,80];
+
+.forEach();
+arr.forEach(n=>console.log(n)); kuch bhi return nai karta
+arr.forEach((n,i)=>console.log(n,i)); element with index
+arr.forEach((n,i,a)=>console.log(n,i,a)); element with index with full array.
+
+arr.find(ele => ele == 50); agar true milega to break aur bahar aa jao gaa aur agar nai mila to   undefined return karega
+
+.find()
+arr.find(ele => ele == 30)?"found":"not found"; ternary operator.
+
+.findIndex()
+arr.findIndex(ele => ele ==30); return index;
+and if not found it will return -1;
+
+.filter(); filter se cloning bhi ho sakti hai/delete bhi ho sakta hai. gives subarray
+var h = arr.filter(e=>true); ==> cloning.
+arr = arr.filter(e=>e!=10); ==> deleting specific element within array
+arr.filter(e=>e==10) ==> find all the element in the array that are same and return an array.
+
+concatenation of string + number will give a string in which the number will convert to the string and then it will concatenate. Typecasting
+
+.map() pehle esa tha lekin ab esa bana hai copy banata hai alag array jaisa
+arr.map()
+
+.sort()   sorting is mutable happens within array.
+arr.sort((first,second)=>(first - second)) => comparator function is used to sort ascending or descending
+
+var names = ["almaaz","shayam","ahmed","raji"]; alphbetic order
+names.sort((a,b)=>a.localeCompare(b));
+
+.reduce() accumulate karo aur add karo usko
+arr.reduce((acc,e)=>acc+e,0); 0 is the default value of acc.
+//reduce work like filter.
+arr.reduce((acc,e)=>{
+    if(e==10){
+        acc.push(e);
+    }return acc;
+},[]);
+
+
+
+
+
+
+
+
 
