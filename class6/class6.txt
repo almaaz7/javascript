@@ -1,0 +1,21 @@
+We will be making a Note MAking App and will perform crud operation from javaScript
+-we use bootstrap to create the structure of the App
+
+Design Pattern
+    MVC - Model View Controller
+Add operation
+    1. Read all input fields?
+    2. Store all the field values where?
+All firlds values goes in object and object will be store in array
+Array use for further operation
+    3. Objects are belongs to Notes Types.
+if we create a generic object(object literal)
+var obj ={};//belong to GOD(object)
+We need a specific kind of object
+e.g. Notes types of object, so notes types it is a ES6 class.
+
+After add we need to print the data in the table body. so dynamically create a new row and print the object in the row.
+Object fields will be print one bu one in the table cell.
+Also we need to create, edit and trash icons dynamically.
+
+Update the Total Record
