@@ -19,3 +19,14 @@ Object fields will be print one bu one in the table cell.
 Also we need to create, edit and trash icons dynamically.
 
 Update the Total Record
+
+Delete operation
+    1. Icon must be clickable (hint css)
+    2. Add click event (this of row) -> Icon -> parent -> TD -> parent -> TR, tr color set red..
+    3. Every Object has key isMarked = false;
+    4. Icon has id, so fetch the id and search in array (find or findindex) -> u get and object.
+        object isMarked = true;
+    5. Count mark - count thoise object in array whose isMarked = true, opposite Unmark
+    Delet button by default disable
+    when count mark is > 0 then only delte button enable.
+    when delete button click so it will delete those records whose isMArked = true [hint : Filter].    
