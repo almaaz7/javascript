@@ -10,8 +10,19 @@ export const noteOperations = {
     total(){
         return this.notes.length;
     },
+    seachById(id){
+        return this.notes.find(note=>note.id==id);
+    },
+    toggleMark(id){
+        this.seachById(id).toggleMark();
+        // const noteObject = this.seachById(id);
+        // noteObject.isMarked = !noteObject.isMarked;
+    },
+    getNotes(){
+        return this.notes;
+    },
     remove(){
-
+        this.notes = this.notes.filter(note=>!note.isMarked);
     },
     search(){
 
@@ -26,10 +37,10 @@ export const noteOperations = {
 
     },
     marktotal(){
-        return 0;
+        return this.notes.filter(note=>note.isMarked).length;
     },
     unmarktotal(){
-        return 0;
+        return this.total()-this.marktotal();
     }
 }
 

@@ -4,6 +4,10 @@ class Note{
         for(let key in noteObject){
             this[key] = noteObject[key];
         }
+        this.isMarked = false;
+    }
+    toggleMark(){
+        this.isMarked = !this.isMarked;
     }
 }
 
